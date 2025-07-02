@@ -7,8 +7,8 @@ from glob import glob
 DATA_ROOT = "../data"
 
 # DB connections
-options_conn = sqlite3.connect("options_data.db")
-stocks_conn = sqlite3.connect("stocks_data.db")
+options_conn = sqlite3.connect("../sql-database/options_data.db")
+stocks_conn = sqlite3.connect("../sql-database/stocks_data.db")
 
 def create_options_table(conn):
     conn.execute('''
